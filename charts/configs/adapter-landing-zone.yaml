@@ -158,10 +158,8 @@ spec:
           observed_generation:
             expression: "generationId"
 
-          observed_time:
-            value: "{{ now | date \"2006-01-02T15:04:05Z07:00\" }}"
-            description: "Timestamp when status was reported"
-
+          observed_time: "{{ now | date \"2006-01-02T15:04:05Z07:00\" }}"
+          
           data:
             namespace:
               name: 
