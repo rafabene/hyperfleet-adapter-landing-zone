@@ -36,6 +36,10 @@ logging:
   # Log output: stdout, stderr
   output: stderr
 
+# Graceful shutdown
+# Time in seconds for graceful shutdown (required by HyperFleet standard)
+terminationGracePeriodSeconds: 30
+
 # Platform-specific scheduling
 nodeSelector: {}
 tolerations: []
